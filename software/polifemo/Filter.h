@@ -23,7 +23,7 @@
 template <typename T> class Filter
 {
 public:
-  T filter(T value) = 0;
+  virtual T filter(T value) = 0;
 };
 
 #endif

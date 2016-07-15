@@ -24,7 +24,8 @@
 
 #include "Filter.h"
 
-template <typename T, uint8_t filterSize> class MovingAverage
+template <typename T, uint8_t filterSize>
+class MovingAverage : public Filter<T>
 {
 protected:
 	T values[filterSize];
